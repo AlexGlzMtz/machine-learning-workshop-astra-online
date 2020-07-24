@@ -18,7 +18,7 @@ Join in and follow along with this workshop!
 ## Installation
 
 ```
-git clone https://github.com/riptano/machine-learning-workshop-astra-online.git
+git clone https://github.com/jamesc127/machine-learning-workshop-astra-online.git
 cd machine-learning-workshop-astra-online
 docker-compose up -d
 ```
