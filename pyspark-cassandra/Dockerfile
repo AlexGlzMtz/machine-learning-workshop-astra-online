@@ -17,6 +17,11 @@ RUN curl -sL --retry 3 -o com.github.jnr_jffi-1.2.19.jar "https://repo1.maven.or
  && chown jovyan:users com.github.jnr_jffi-1.2.19.jar \
  && chmod 644 com.github.jnr_jffi-1.2.19.jar
 
+WORKDIR /home/jovyan
+
+RUN curl -sL https://downloads.datastax.com/dsbulk/dsbulk-1.6.0.tar.gz | tar xz \
+ && chown -R jovyan:users dsbulk-1.6.0 \
+ && chmod +x ./dsbulk-1.6.0/bin/dsbulk
+
 USER jovyan
 
-WORKDIR /home/jovyan
