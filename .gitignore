@@ -5,3 +5,5 @@
 ./jupyter/.local
 ./jupyter/secureconnect/*.zip
 ./jupyter/dsbulk-1.6.0
+./jupyter/.bash_history
+./jupyter/logs
