@@ -29,13 +29,11 @@ docker-compose up -d
 - Move the Secure Connect Bundle to [./jupyter/secureconnect](./jupyter/secureconnect)  
 - For the Cassandra lab, access [DataStax Developer Studio on Astra](https://docs.datastax.com/en/astra/aws/doc/dscloud/astra/dscloudConnectStudio.html)
 - For the Spark labs, access Jupyter Notebooks: http://localhost:8888 password: `datastax`
-- Start with the Collaboritive Filtering notebook
+    - Your Docker image needs to be running before this link will work
+- Start with the [Collaboritive Filtering](http://localhost:8888/notebooks/Collaborative%20Filtering.ipynb) notebook
 - Have Fun! :-)
 
-You may need to use some custom IP instead of `localhost` if you use docker-for-mac, docker-for-windows or similar installation.
-
 ## Known Issues
-
-In some cases executing the exercises may lead to memory issues, especially on weaker or non-Linux machines due to docker limitations on memory.
-If you have any issues with exercises after the first few, try to clean up and start again `docker-compose kill && docker-compose down && docker-compose up -d`.
-You may need to repeat steps of the notebook you were working on.
+- You may need to use some custom IP instead of `localhost` if you use docker-for-mac, docker-for-windows or similar installation.
+- In some cases executing the exercises may lead to memory issues, especially on weaker or non-Linux machines due to docker limitations on memory.
+- If you have any issues with exercises after the first few, try to clean up and start again `docker-compose kill && docker-compose down && docker-compose up -d`. You may need to repeat steps of the notebook you were working on.
